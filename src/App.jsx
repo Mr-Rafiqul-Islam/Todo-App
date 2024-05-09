@@ -122,10 +122,10 @@ function App() {
             </div>
           </div>
           {/* table data */}
-          <div className="w-[450px] mx-auto mt-5 rounded-lg">
+          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className="relative overflow-x-auto">
               <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 rounded-lg">
-                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 rounded-lg">
+                <thead className="text-xs text-gray-700 uppercase dark:bg-gray-700 dark:text-gray-400 rounded-lg">
                   <tr>
                     <th scope="col" className="px-6 py-3">
                       All Todos
@@ -156,7 +156,7 @@ function App() {
                           <label htmlFor={item.id}>{item.name}</label>
                         </div>
                       </th>
-                      <div className=" py-4">
+                      <div className="py-4">
                         <button
                           onClick={() => handleDelete(item.id)}
                           className="bg-red-500 text-white py-1 px-2 rounded-md"
