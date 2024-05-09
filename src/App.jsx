@@ -140,7 +140,7 @@ function App() {
                     >
                       <th
                         scope="row"
-                        className={`px-6 bg-white border-b dark:bg-gray-800 dark:border-gray-700 rounded-lg ${
+                        className={`px-6 py-4 flex justify-between bg-white border-b dark:bg-gray-800 dark:border-gray-700 rounded-lg ${
                           item.checked ? "bg-gray-200 dark:bg-gray-700" : "" // Change background color if item is checked
                         }`}
                       >
@@ -155,15 +155,13 @@ function App() {
                           />
                           <label htmlFor={item.id}>{item.name}</label>
                         </div>
-                      </th>
-                      <div className="py-4">
                         <button
                           onClick={() => handleDelete(item.id)}
                           className="bg-red-500 text-white py-1 px-2 rounded-md"
                         >
                           Delete
                         </button>
-                      </div>
+                      </th>
                     </tr>
                   ))}
                 </tbody>
